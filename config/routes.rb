@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
 
+  get 'sessions/new'
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -29,6 +31,9 @@ Rails.application.routes.draw do
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
   get 'signup'  => 'users#new'
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
 
   # Example resource route with options:
   #   resources :products do
