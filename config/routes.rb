@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
 
+  resources:account_activation, only:[:edit]
   # Example resource route with options:
   #   resources :products do
   #     member do
