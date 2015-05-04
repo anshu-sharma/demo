@@ -2,13 +2,17 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass','3.2.0.0'
 gem 'bcrypt'
 gem 'faker', '1.4.2'
-
+#image upload
+gem 'carrierwave',             '0.10.0'
+gem 'mini_magick',             '3.8.0'
+gem 'fog',                     '1.23.0'
+#paginating
 gem 'will_paginate','3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

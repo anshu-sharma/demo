@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
+
   attr_accessor :remember_token,:activation_token,:reset_token
+  has_many :microposts, dependent: :destroy
   before_save:downcase_email
   before_create:create_activation_digest
   validates :name, presence: true, length: { maximum: 50 }
@@ -71,6 +73,9 @@ def create_reset_digest
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
   end
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
   private
 
     # Converts email to all lower-case.
@@ -87,4 +92,5 @@ def create_reset_digest
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
   end
+
 end

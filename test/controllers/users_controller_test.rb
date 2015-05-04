@@ -6,7 +6,6 @@ class UsersControllerTest < ActionController::TestCase
     @user = users(:michael)
     @other_user = users(:archer)
   end
-  end
 
   test "should get new" do
     get :new
