@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # require 'test_helper'
+=======
+require 'test_helper'
+>>>>>>> statis-pages
 
 class StaticPagesControllerTest < ActionController::TestCase
   test "should get home" do

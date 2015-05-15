@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class StaticPagesController < ApplicationController #it means StaticPagesController inherited from Rails class ApplicationController 
   
   def index
@@ -19,5 +20,9 @@ class StaticPagesController < ApplicationController #it means StaticPagesControl
   end
   def contact
   	
+=======
+class StaticPagesController < ApplicationController
+  def ...
+>>>>>>> statis-pages
   end
 end
