@@ -1,9 +1,21 @@
 <% provide(:title, "Help") %>
-<h1>Help</h1>
-<p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="http://www.railstutorial.org/#help">Rails Tutorial help section</a>.
-  To get help on this sample app, see the
-  <a href="http://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
+<div class="help">
+<h1><%=  image_tag "images.jpeg", alt: "Help Logo" %></h1>
+<p class="bold">
+  Get help on the Ruby on Rails Tutorial at the Rails Tutorial help section.
+ <!--  <a href="http://www.railstutorial.org/#help">Rails Tutorial help section</a>. -->
+  To get help on this Rails app, see the
+  <a href="http://www.railstutorial.org/book" class="bold"><em>Ruby on Rails Tutorial</em>
   book</a>.
+  <ul class="bold">
+  	<li>To login to this site first you have to register.For registeration go to Signup page <%= link_to "Sign up now!", signup_path%></li>
+  <li>If user is already registered then go to Login page<%= link_to  " Login now!", users_path %></li>
+  <li>If User forget his/her password then click on froget password link on login page <%= link_to  " Login now!", users_path %></li>
+  <li>After login you will redirect to Users page where all users are listout.</li>
+  <li>Click on Home you will go to home page of Logged in user.</li>
+  <li>Click on Account link you will listout with three another option<ol><li> Profile</li><li>Settings</li><li>Logout</li></ol></li>
+  <li>Click on Profile User Profile page will open.</li>
+  <li>Click on Settings Updation page will open.</li>
+  <li>Click on Logout User will Logged out.</li>
 </p>
+</div>

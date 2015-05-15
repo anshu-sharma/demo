@@ -1,0 +1,9 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+      <h1>
+        <%= image_tag (@user.avatar.url(:thumb)), id:"imagesize"%>
+      </h1>
+      <span class="user">
+      <%= @user.name%>
+      </span>
+</div>

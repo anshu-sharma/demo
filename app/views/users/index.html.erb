@@ -1,5 +1,11 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
+<p class="search1">
+<%= text_field_tag :search%>
+<span class="search1">
+<%= submit_tag "search for users" ,id: "search_btn",class:"btn btn-large btn-primary"%>
+</span>
+</span>
 <%= will_paginate %>
 
 <!-- <ul class="users">

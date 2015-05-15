@@ -1,6 +1,8 @@
 class PasswordResetsController < ApplicationController
 	before_action :get_user,   only: [:edit, :update]
-    before_action :valid_user, only: [:edit, :update]
+  before_action :valid_user, only: [:edit, :update]
+  before_action :check_expiration, only: [:edit, :update]
+
   def new
   end
 
@@ -18,8 +20,11 @@ class PasswordResetsController < ApplicationController
   end
 
   def edit
+
+
   end
- def update
+
+  def update
     if password_blank?
       flash.now[:danger] = "Password can't be blank"
       render 'edit'
@@ -37,6 +42,12 @@ class PasswordResetsController < ApplicationController
     def user_params
       params.require(:user).permit(:password, :password_confirmation)
     end
+
+    # Returns true if password is blank.
+    def password_blank?
+      params[:user][:password].blank?
+    end
+  
 
    def get_user
       @user = User.find_by(email: params[:email])
