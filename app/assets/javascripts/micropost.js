@@ -14,3 +14,8 @@ function readURL(input) {
 $("#imgInp").change(function(){
     readURL(this);
 });
+$(document).ready(function(){
+    $("#commentid").click(function(){
+        $('.comment').toggle();
+    });
+});

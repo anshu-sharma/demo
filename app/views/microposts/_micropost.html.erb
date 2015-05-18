@@ -16,4 +16,19 @@
                                        data: { confirm: "You sure?" } %>
     <% end %>
 	</span>
+	<p><%= button_tag "comments",id:"commentid"%></p>
+	<div class="comment" style= "display:none !important">
+      <% micropost.comments.each do |comment| %>
+    	<p>
+      	<span class="user"><%= link_to comment.user.name, comment.user %></span>
+      	<span class="content">
+		<p><%= comment.content %>
+      		<%= link_to 'Delete',[micropost,comment],method: :delete%></p>
+    	</p>
+		  <%= image_tag comment.micropost.picture.url if micropost.picture? %>
+	    </span>
+      <%end%>
+           <h3>Add a comment:</h3>
+	       <%= render "microposts/comment", micropost: micropost%>
+  </div>
 </li>

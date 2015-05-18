@@ -5,6 +5,8 @@ class Micropost < ActiveRecord::Base
   validates :user_id, presence: true
   validates :content, presence: true,length: {maximum: 140}
   validate  :picture_size
+  has_many :comments, :dependent => :destroy
+  accepts_nested_attributes_for :comments
   private
 
     # Validates the size of an uploaded picture.
