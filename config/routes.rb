@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :users do
     collection do 
-      get :search_useor
+      get :search_user
     end
   end
 

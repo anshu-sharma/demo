@@ -1,9 +1,10 @@
 $(document).ready(function(){
 	$("#search_btn").click(function(){
 		var text = $("#search").val();
-		$.get('users/search_user',{val: text},function(data){
-			$(".users").html(data);
-		});
+		alert(text);
+		// $.get('users/search_user',{val: text},function(data){
+		// 	$(".users").html(data);
+		// });
 	});
 
 $('#search').keyup(function(){

@@ -81,6 +81,7 @@
   end
 
   def search_user
+    debugger
     @users = User.where("users.name LIKE ?","%#{params[:val]}%")
     render partial: "search_results"
   end
