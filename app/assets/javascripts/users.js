@@ -1,15 +1,14 @@
 $(document).ready(function(){
 	$("#search_btn").click(function(){
 		var text = $("#search").val();
-		alert(text);
-		// $.get('users/search_user',{val: text},function(data){
-		// 	$(".users").html(data);
-		// });
+		$.get('/users/search_user',{val: text},function(data){
+			$(".users").html(data);
+		});
 	});
 
 $('#search').keyup(function(){
 	var text = $("#search").val();
-		$.get('users/search_user',{val: text},function(data){
+		$.get('/users/search_user',{val: text},function(data){
 			$(".users").html(data);
 		});
 });
