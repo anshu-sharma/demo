@@ -17,8 +17,8 @@
     <% end %>
 	</span>
 	
-	<p><%= button_tag "comments",id:micropost.id%></p>
-	<div class="comment" style= "display:none !important" id=<%= micropost.id%>div>
+	<p><%= button_tag "comments",id:micropost.id,class: "cmt_button"%></p>
+	<div class="comment" style= "display:none" id=<%= micropost.id%>div>
       <% micropost.comments.each do |comment| %>
               <%if comment.user.avatar.url%>
 		          <%= image_tag (comment.user.avatar.url(:thumb)), id:"imageresize"%>
