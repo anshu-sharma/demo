@@ -1,6 +1,6 @@
 <li id="micropost-<%= micropost.id %>">
 	<%if micropost.user.avatar.url%>
-		 <%= image_tag (micropost.user.avatar.url(:thumb)), id:"imagesize"%>
+		 <%= image_tag (micropost.user.avatar.url(:thumb)), id:"imageresize"%>
 	<%else%>
 		<%= link_to gravatar_for(micropost.user),micropost.user %>
 	<%end%>
