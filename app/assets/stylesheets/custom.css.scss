@@ -289,4 +289,46 @@ span.picture {
   .bold{font-weight: bold;}
   .help{background-color: floralwhite;}
 
-  #imageresize{width:5%; height:5%;}
+  #imageresize{width:2%; height:2%;}
+  /*comment*/
+  .comment {
+  list-style: none;
+  padding: 0;
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 0px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 5px;
+    margin-top:5px;
+    width:42px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}

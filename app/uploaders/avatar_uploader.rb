@@ -45,6 +45,7 @@ include CarrierWave::MiniMagick
     process resize_to_limit: [150, 150]
   end
 
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   # def extension_white_list

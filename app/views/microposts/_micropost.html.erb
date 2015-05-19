@@ -1,6 +1,6 @@
 <li id="micropost-<%= micropost.id %>">
 	<%if micropost.user.avatar.url%>
-		 <%= image_tag (micropost.user.avatar.url(:thumb)), id:"imageresize"%>
+		 <%= image_tag (micropost.user.avatar.url(:thumb)), id:"imagesize"%>
 	<%else%>
 		<%= link_to gravatar_for(micropost.user),micropost.user %>
 	<%end%>
@@ -16,19 +16,28 @@
                                        data: { confirm: "You sure?" } %>
     <% end %>
 	</span>
-	<p><%= button_tag "comments",id:"commentid"%></p>
-	<div class="comment" style= "display:none !important">
+	
+	<p><%= button_tag "comments",id:micropost.id%></p>
+	<div class="comment" style= "display:none !important" id=<%= micropost.id%>div>
       <% micropost.comments.each do |comment| %>
-    	<p>
-      	<span class="user"><%= link_to comment.user.name, comment.user %></span>
-      	<span class="content">
-		<p><%= comment.content %>
-      		<%= link_to 'Delete',[micropost,comment],method: :delete%></p>
-    	</p>
-		  <%= image_tag comment.micropost.picture.url if micropost.picture? %>
-	    </span>
-      <%end%>
-           <h3>Add a comment:</h3>
-	       <%= render "microposts/comment", micropost: micropost%>
-  </div>
+              <%if comment.user.avatar.url%>
+		          <%= image_tag (comment.user.avatar.url(:thumb)), id:"imageresize"%>
+	          <%else%>
+		          <%= link_to gravatar_for(comment.user),comment.user%>
+	          <%end%>
+      	        <span class="user"><%= link_to comment.user.name, comment.user %></span>
+      	        <span class="content">
+		          <h6><%= comment.content %></h6>
+	            </span>
+	            <span class="timestamp">
+                     posted<%= time_ago_in_words(comment.created_at) %>ago.
+                        <% if current_user?(comment.user) %>
+                             <%= link_to "delete", [micropost,comment], method: :delete,
+                                       data: { confirm: "You sure?" } %>
+                        <% end %>
+	            </span>
+       <%end%>
+            <h3>Add a comment:</h3>
+	           <%= render "microposts/comment", micropost: micropost%>
+    </div>
 </li>
