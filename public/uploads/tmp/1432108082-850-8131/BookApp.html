@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>BookApp</title>
+  <link rel="stylesheet" media="all" href="BookApp_files/custom.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="BookApp_files/magazine.css" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="BookApp_files/application.css" data-turbolinks-track="true">
+  <script src="BookApp_files/jquery.js" data-turbolinks-track="true"></script>
+<script src="BookApp_files/jquery_ujs.js" data-turbolinks-track="true"></script>
+<script src="BookApp_files/turbolinks.js" data-turbolinks-track="true"></script>
+<script src="BookApp_files/magazine.js" data-turbolinks-track="true"></script>
+<script src="BookApp_files/application.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="XF+gVbngqDww9CFH6M4VaYEXzJkKRbLggviBCy3J3xxxMaNPsGecMn7OhWMywZ7+mFd5O/UGlGxpgPEEjIbocw==">
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1>Magazine Details</h1>
+    <form class="new_magazine" id="new_magazine" action="/magazines" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="XF+gVbngqDww9CFH6M4VaYEXzJkKRbLggviBCy3J3xxxMaNPsGecMn7OhWMywZ7+mFd5O/UGlGxpgPEEjIbocw==" type="hidden">
+<p>
+      <label for="magazine_title">Title</label>
+      <input class="form-control" name="magazine[title]" id="magazine_title" type="text">
+
+      <label for="magazine_description">Description</label>
+      <input class="form-control" name="magazine[description]" id="magazine_description" type="text">
+
+      <label for="magazine_price">Price</label>
+      <input class="form-control" name="magazine[price]" id="magazine_price" type="text">
+</p>
+      
+       <p></p><h2>Article Details</h2><br>
+  <label for="magazine_articles_attributes_0_title">Title</label>
+  <input class="form-control" name="magazine[articles_attributes][0][title]" id="magazine_articles_attributes_0_title" type="text"><br>
+  <label for="magazine_articles_attributes_0_content">Content</label>
+  <input class="form-control" name="magazine[articles_attributes][0][content]" id="magazine_articles_attributes_0_content" type="text"><br>
+<p></p>
+     <p> <input name="commit" value="submit" type="submit"> </p>
+</form>  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
