@@ -1,17 +1,14 @@
 # encoding: utf-8
 
 class VideoUploader < CarrierWave::Uploader::Base
-
+if Rails.env.production?
+    storage :fog
+  else
+    storage :file
+  end
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
-include CarrierWave::MiniMagick
-process resize_to_limit: [100, 100]
-if Rails.env.production?
-     storage :fog
-else
-    storage :file
-end
   # Inclu
   # Choose what kind of storage to use for this uploader:
   storage :file
