@@ -77,7 +77,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   
-  #config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   host = 'railssample123.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
@@ -87,7 +87,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name      => 'anshu.sharma',
     :password       => 'password123',
-    #:domain         => 'heroku.com',
+    :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
 end
