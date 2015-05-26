@@ -7,19 +7,12 @@
   def new
     @user = User.new
   end
+  
   def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
   def index
-  #  # @users=User.all
-  # # @names = User.all
-  # @search=params[:search]
-  # @searchname=User.search(@search)
-  # # respond_to do |format|
-  # #   format.html # index.html.erb
-  # #   format.xml  { render :xml => @usernames }
-  # # end
-  @users = User.paginate(page: params[:page],:per_page => 5)
+      @users = User.paginate(page: params[:page],:per_page => 5)
   end
   
   def show

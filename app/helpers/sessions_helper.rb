@@ -52,4 +52,8 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.url if request.get?
   end
+  def deny_access
+  store_location
+  redirect_to login_path, :notice => "Please login to access this page."
+  end
 end
