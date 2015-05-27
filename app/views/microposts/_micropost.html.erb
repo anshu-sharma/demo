@@ -7,8 +7,8 @@
 	<span class="user"><%= link_to micropost.user.name, micropost.user %></span>
 	<span class="content">
 		<%= micropost.content %>
-		   <%= image_tag micropost.picture.url if micropost.picture? %>
-           <%= video_tag micropost.video_url.to_s ,:controls =>true, type: "video/mp4",id:"imageresize" if micropost.video? %> 
+		   <%= image_tag micropost.picture.url ,id:"imageresize",class:"imgup" if micropost.picture? %>
+           <%= video_tag micropost.video_url.to_s ,:controls =>true, type: "video/mp4",id:"imageresize", class:"vdup" if micropost.video? %> 
            <%= link_to "Download attachment", micropost.attachment_url if micropost.attachment? %>
 	</span>
 	<span class="timestamp">
@@ -43,3 +43,16 @@
 	           <%= render "microposts/comment", micropost: micropost%>
     </div>
 </li>
+ <script type="text/javascript">
+$(".imgup").click(function(){
+	$(this).height(200);
+    $(this).width(600);
+  
+});
+$(".vdup").click(function(){
+  $(this).height(400);
+    $(this).width(800);
+  
+});
+ </script>
+

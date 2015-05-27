@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:3000/#myPopup -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title></title>
+    <link rel="stylesheet" media="all" href="http://localhost:3000/assets/account_activation.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/custom.self-3f805889c2f268ddd3f4964eae786c4ebacc295177eda108efe71ecf091260bb.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/microposts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/password_resets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/relationships.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="true">
+<link rel="stylesheet" media="all" href="http://localhost:3000/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" data-turbolinks-track="true">
+    <script src="./localhost_files/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/account_activation.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/comment.self-b21dc44f050c9c28324d99add3bdd9bc80d1eb5b1a7431333c7ba1f4349758fd.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/micropost.self-2fdbf2544f498d9ea67e80014ae7aa1ede4eaa6f708e24d907b1d76a33f6cfe3.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/microposts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/password_resets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/relationships.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/users.self-49f3ee14b2a90dfcd987347bba49ef1b31a5f7c8e6962cc14fbe769a0f59d053.js" data-turbolinks-track="true"></script>
+<script src="./localhost_files/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js" data-turbolinks-track="true"></script>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q==">
+    <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+<![endif]-->
+  </head>
+  <body>
+    <!-- <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <a id="logo" href="#">sample app</a>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="#">Log in</a></li>
+      </ul>
+    </nav>
+  </div>
+</header> -->
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <a id="logo" href="http://localhost:3000/">TWEET with RAILS</a>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost:3000/">Home</a></li>
+        <li><a href="http://localhost:3000/help">Help</a></li>
+          <li><a href="http://localhost:3000/users">Users</a></li>
+          <li class="dropdown">
+            <a href="http://localhost:3000/#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="http://localhost:3000/users/6">Profile</a></li>
+              <li><a href="http://localhost:3000/users/6/edit">Settings</a></li>
+              <li class="divider"></li>
+              <li>
+                <a rel="nofollow" data-method="delete" href="http://localhost:3000/logout">Log out</a>
+              </li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="container">
+      
+
+<!--<h1>Sample App</h1>
+=======
+<h1>Sample App</h1>
+>>>>>>> statis-pages
+<p>
+  This is the home page for the
+  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+  sample application.
+<<<<<<< HEAD
+</p>-->
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        	<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+<h1>Example User-5</h1>
+<span><a href="http://localhost:3000/users/6">view my profile</a></span>
+<span>52 microposts</span>
+      </section>
+      <section class="micropost_form">
+        
+<form class="new_micropost" id="new_micropost" enctype="multipart/form-data" action="http://localhost:3000/microposts" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q==">
+  
+  <div class="field">
+    <textarea placeholder="Compose new micropost..." name="micropost[content]" id="micropost_content"></textarea>
+  </div>
+  <span class="picture">
+    <label class="active" for="micropost_uploadimage">Uploadimage</label>
+    <input accept="image/jpeg,image/gif,image/png" type="file" name="micropost[picture]" id="micropost_picture"> 
+  </span>
+  <span class="video"> 
+    <label class="active" for="micropost_uploadvideo">Uploadvideo</label>
+    <input type="file" name="micropost[video]" id="micropost_video">
+  </span>
+  <span class="attachment">
+    <label class="active" for="micropost_upload">Upload</label><img alt="Help Logo" class="attachmentimage" src="./localhost_files/images-8074e7332e5cb9fbef861b392733f771efd2b555881acb9da1bc5f3a8a683b29.png">
+    <input type="file" name="micropost[attachment]" id="micropost_attachment">
+  </span>
+    <input type="submit" name="commit" value="Post" class="btn btn-primary">
+</form><script type="text/javascript">
+  $('#micropost_picture').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert('Maximum file size is 5MB. Please choose a smaller file.');
+    }
+  });
+</script>
+      </section>
+      <section class="stats">
+         <div class="stats">
+  <a href="http://localhost:3000/users/6/following">
+    <strong id="following" class="stat">
+      1
+    </strong>
+    following
+  </a>
+  <a href="http://localhost:3000/users/6/followers">
+    <strong id="followers" class="stat">
+      1
+    </strong>
+    followers
+  </a>
+</div>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>Micropost feed</h3>
+      <ol class="microposts">
+<li id="micropost-317">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		hello
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+           <video controls="controls" type="video/mp4" id="imageresize" src="/uploads/micropost/video/317/Get_in_a_Group.mp4"></video> 
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    postedabout 2 hoursago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/317">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="317" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="317div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/317/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-316">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		hiii
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+           <video controls="controls" type="video/mp4" id="imageresize" src="/uploads/micropost/video/316/Get_in_a_Group.mp4"></video> 
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    postedabout 4 hoursago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/316">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="316" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="316div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/316/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-315">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		hi
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           <a href="http://localhost:3000/uploads/micropost/attachment/315/table.html">Download attachment</a>
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted6 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="315" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="315div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/315/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-314">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		hi
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   <img id="imag" src="./localhost_files/imgo.jpeg" alt="Imgo">
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img width="800px" height="400px" src="./localhost_files/imgo.jpeg" alt="Imgo">
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted6 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="314" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="314div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/314/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-312">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		hello
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted6 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="312" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="312div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/312/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-307">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		hi
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+           <video controls="controls" type="video/mp4" id="imageresize" src="/uploads/micropost/video/307/Get_in_a_Group.mp4"></video> 
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted6 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="307" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="307div">
+		          <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+      	        <span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+      	        <span class="content">
+		          <h6>grt video...mast</h6>
+	            </span>
+	            <span class="timestamp">
+                     posted6 daysago.
+	            </span>
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/307/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-300">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Illo repellat facilis porro tempore blanditiis.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/300">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="300" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="300div">
+		          <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+      	        <span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+      	        <span class="content">
+		          <h6>hi</h6>
+	            </span>
+	            <span class="timestamp">
+                     posted7 daysago.
+	            </span>
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/300/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-295">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Illo repellat facilis porro tempore blanditiis.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="295" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="295div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/295/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-294">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Voluptas qui voluptatibus qui commodi et dolorem.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/294">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="294" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="294div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/294/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-289">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Voluptas qui voluptatibus qui commodi et dolorem.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="289" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="289div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/289/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-288">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Quidem pariatur eaque earum dolorum nesciunt autem.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/288">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="288" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="288div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/288/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-283">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Quidem pariatur eaque earum dolorum nesciunt autem.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="283" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="283div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/283/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-282">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Ut repellendus tenetur placeat molestias.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/282">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="282" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="282div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/282/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-277">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Ut repellendus tenetur placeat molestias.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="277" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="277div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/277/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-276">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Qui ut quos eum qui odit tempora architecto omnis et.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/276">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="276" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="276div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/276/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-271">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Qui ut quos eum qui odit tempora architecto omnis et.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="271" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="271div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/271/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-270">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Est necessitatibus expedita ut quo accusantium quidem distinctio voluptas dicta.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/270">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="270" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="270div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/270/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-265">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Est necessitatibus expedita ut quo accusantium quidem distinctio voluptas dicta.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="265" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="265div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/265/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-264">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Earum at voluptatem sunt tempore sit quas aut rerum consequuntur.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/264">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="264" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="264div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/264/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-259">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Earum at voluptatem sunt tempore sit quas aut rerum consequuntur.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="259" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="259div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/259/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-258">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Ratione voluptatem ut molestiae voluptate et.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/258">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="258" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="258div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/258/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-253">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Ratione voluptatem ut molestiae voluptate et.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="253" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="253div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/253/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-252">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Nihil exercitationem unde dolores quis totam vitae.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/252">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="252" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="252div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/252/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-247">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Nihil exercitationem unde dolores quis totam vitae.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="247" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="247div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/247/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-246">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Et id iusto ea qui amet distinctio.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/246">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="246" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="246div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/246/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-241">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Et id iusto ea qui amet distinctio.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="241" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="241div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/241/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-240">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Provident aut perspiciatis fuga doloremque.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/240">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="240" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="240div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/240/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-235">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Provident aut perspiciatis fuga doloremque.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="235" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="235div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/235/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-234">
+		<a href="http://localhost:3000/users/6"><img alt="Example User-5" class="gravatar" src="./localhost_files/3cd98f56e3a0822a762c9a4b85fd5685"></a>
+	<span class="user"><a href="http://localhost:3000/users/6">Example User-5</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Aut deleniti nemo commodi tempore explicabo aperiam ut distinctio modi.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+      <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="http://localhost:3000/microposts/234">delete</a>
+	</span>
+	
+	<p><button name="button" type="submit" id="234" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="234div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/234/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+<li id="micropost-229">
+		 <img id="imageresize" src="./localhost_files/thumb_imgo.jpeg" alt="Thumb imgo">
+	<span class="user"><a href="http://localhost:3000/users/1">Example User</a></span>
+	<div id="pageone" data-role="main" class="ui-content">
+	<span class="content">
+		Aut deleniti nemo commodi tempore explicabo aperiam ut distinctio modi.
+		<a href="./localhost_files/localhost.html" data-rel="popup" data-position-to="window">
+		   
+		</a>
+            
+           
+       <div data-role="popup" id="myPopup" style="display:none">
+      <p>This is my picture!</p> 
+      <a href="http://localhost:3000/#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+    </div>
+	</span>
+    </div>
+	<span class="timestamp">
+    posted7 daysago.
+	</span>
+	
+	<p><button name="button" type="submit" id="229" class="cmt_button">comments</button></p>
+	<div class="comment" style="display:none" id="229div">
+            <h3>Add a comment:</h3>
+	           <form class="new_comment" id="new_comment" action="http://localhost:3000/microposts/229/comments" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="N6ZJQsuIZCmbByLywAXzzcfSmu0emahE44lKgk6nrSH+/snFhS+bxMP+kZ0pBdZriiw4eVvMNGb3VNgy96Jj+Q=="> 
+
+  <div class="field">
+    <textarea placeholder="Leave a comment" name="comment[content]" id="comment_content"></textarea>
+  </div>
+  <button class="btn" type="submit">
+    Create
+  </button>
+</form>
+    </div>
+</li>
+
+</ol>
+<div class="pagination"><ul class="pagination"><li class="prev previous_page disabled"><a href="http://localhost:3000/#">← Previous</a></li> <li class="active"><a rel="start" href="http://localhost:3000/static_pages/home?page=1">1</a></li> <li><a rel="next" href="http://localhost:3000/static_pages/home?page=2">2</a></li> <li><a href="http://localhost:3000/static_pages/home?page=3">3</a></li> <li><a href="http://localhost:3000/static_pages/home?page=4">4</a></li> <li class="next next_page "><a rel="next" href="http://localhost:3000/static_pages/home?page=2">Next →</a></li></ul></div>
+
+    </div>
+  </div>
+
+<p></p>
+
+<script type="text/javascript">
+    $(".cmt_button").click(function(){
+        var id =$(this).attr("id")
+        $("#"+id+"div").toggle();
+        // $('.comment').toggle();
+    });
+    
+</script>
+
+
+      <footer class="footer">
+  <small>
+    The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
+  </small>
+  <nav>
+    <ul>
+      <li><a href="http://localhost:3000/about">About</a></li>
+      <li><a href="http://localhost:3000/contact">Contact</a></li>
+      <li><a href="http://news.railstutorial.org/">News</a></li>
+    </ul>
+  </nav>
+</footer>
+      <pre class="debug_dump">--- !ruby/hash:ActionController::Parameters
+controller: static_pages
+action: home
+</pre>
+    </div>
+  
+</body></html>
